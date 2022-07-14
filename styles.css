@@ -1,0 +1,236 @@
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: rgba(24, 24, 24, 0.8);
+}
+
+section {
+  display: block;
+  width: 98%;
+  margin-bottom: 1.875em;
+  overflow-x: hidden;
+}
+
+p {
+  width: 98%;
+}
+
+hr {
+  width: 96%;
+  height: 0.1em;
+  border-color: rgba(126, 126, 126, 0.6);
+  border-style: dashed;
+  margin: 0;
+}
+
+.text_center {
+  text-align: center;
+}
+
+/* Margins */
+
+.m-b_1 {
+  margin-bottom: 0.625em;
+}
+
+.m-b_2 {
+  margin-bottom: 1.875em;
+}
+
+.m-y {
+  margin: 1.875em 0;
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+#navbar {
+  min-width: 25%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#navbar>header {
+  padding: 1em 0.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#navbar ul {
+  width: auto;
+  height: 540px;
+  display: block;
+  overflow: auto;
+  list-style: none;
+}
+
+#navbar li {
+  position: relative;
+  padding: 0 0.5em;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 1em;
+  background-color: rgba(126, 126, 126, 0.2);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1rem;
+  border: 0.02em solid rgba(126, 126, 126, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: rgba(126, 126, 126, 0.6);
+}
+
+/* Main */
+
+#main-doc {
+  position: absolute;
+  left: 340px;
+}
+
+section>header {
+  padding: 1em 0.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Design Table */
+
+.design-table {
+  width: 98%;
+  min-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  border-collapse: collapse;
+}
+
+.design-table thead tr {
+  background-color: rgba(126, 126, 126, 0.8);
+  color: #ffffff;
+  text-align: center;
+}
+
+.design-table th,
+.design-table td {
+  padding: 0.75em 0.5em;
+}
+
+.design-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.design-table tbody td {
+  text-align: center;
+}
+
+.design-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.design-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgba(126, 126, 126, 0.8);
+}
+
+code {
+  position: relative;
+  width: 98%;
+  display: block;
+  background-color: rgba(126, 126, 126, 0.2);
+  padding: 1.25em;
+  text-align: left;
+  border-radius: 0.313em;
+}
+
+span.bold {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #000000;
+  vertical-align: middle;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  #navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 150px;
+  }
+
+  #navbar ul {
+    height: 100px;
+  }
+
+  #main-doc {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-top: 170px;
+    padding: 0.5em;
+  }
+
+  section {
+    width: 100%;
+    margin: 1em auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+
+  .design-table {
+    min-width: 100%;
+  }
+
+  .design-table tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+  }
+
+  code {
+    width: 100%;
+  }
+}

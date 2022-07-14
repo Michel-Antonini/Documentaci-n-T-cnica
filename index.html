@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python from scratch.">
+    <title>Python Technical Documentation</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+
+        <header>Python (Basic Course)</header>
+
+        <ul id="nav-items">
+            <li id="nav-item"><a href="#what_is_it_and_what_is_python_for?" class="nav-link">What is it and what is
+                    Python for?</a></li>
+            <li id="nav-item"><a href="#data_structure" class="nav-link">Data Structure</a></li>
+            <li id="nav-item"><a href="#ways_to_print_a_value_on_the_screen" class="nav-link">Ways to print a value on
+                    the screen</a></li>
+            <li id="nav-item"><a href="#python_module_operator" class="nav-link">Python Module Operator</a></li>
+            <li id="nav-item"><a href="#variables" class="nav-link">Variables</a></li>
+            <li id="nav-item"><a href="#dynamic_nomenclature" class="nav-link">Dynamic Nomenclature</a></li>
+            <li id="nav-item"><a href="#text_strings" class="nav-link">Text Strings</a></li>
+            <li id="nav-item"><a href="#index_and_slicing_of_a_string" class="nav-link">Index and Slicing of a
+                    String</a></li>
+            <li id="nav-item"><a href="#string_properties_and_methods" class="nav-link">String Properties and
+                    Methods</a></li>
+            <li id="nav-item"><a href="#functions" class="nav-link">Functions</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Main -->
+    <main id="main-doc">
+
+        <!-- Section introductory -->
+        <section id="what_is_it_and_what_is_python_for?" class="main-section">
+            <header>What is it and what is Python for?</header>
+            <p>Python is a high-level programming language that is used to develop applications of all kinds.
+                Unlike other languages such as Java or .NET, it is an interpreted language, that is, it is not necessary
+                to compile it to run the applications written in Python, but rather they are executed directly by the
+                computer using a program called an interpreter, so that it is not necessary to “translate” it into
+                machine language.</p><br>
+            <p>Python is an easy language to read and write due to its high similarity with human language. In addition,
+                it is an open source multiplatform language and, therefore, free, which allows you to develop software
+                without limits. Over time, Python has been gaining popularity thanks to its simplicity and its extensive
+                possibilities, especially in recent years, since it makes it easier to work with artificial
+                intelligence, big data, machine learning and data science, among many other booming fields. and in great
+                demand.</p>
+        </section>
+
+        <hr>
+
+        <!-- Data -->
+        <section id="data_structure" class="main-section">
+            <header>Data Structure</header>
+
+            <table class="design-table">
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Integers</td>
+                        <td>Int</td>
+                        <td>3 500 50000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Floating point</td>
+                        <td>Float</td>
+                        <td>2.5 6.76 56856</td>
+                    </tr>
+
+                    <tr>
+                        <td>Text Strings</td>
+                        <td>Str</td>
+                        <td>"hello" 'michel' "20,000"</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lists</td>
+                        <td>List</td>
+                        <td>[10,"hola",200.4]</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dicctionaries</td>
+                        <td>Dict</td>
+                        <td>{"word":"meaning","key code":"value"}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuples</td>
+                        <td>Tup</td>
+                        <td>Immutable Order of Objects:(10,"hello",200.4)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sets</td>
+                        <td>Set</td>
+                        <td>Unordered Objects Collection:{"a","b"}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Booleans (True o False)</td>
+                        <td>bool</td>
+                        <td>True or False</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Values -->
+        <section id="ways_to_print_a_value_on_the_screen" class="main-section">
+            <header>Ways to print a value on the screen</header>
+            <p class="m-b_1">1º) Directly:</p>
+            <code class="m-b_2">print(4 + 4)</code>
+            <p class="m-b_1">2º) Through a variable:</p>
+            <code class="m-b_2">a = 4 + 4<br>
+                print(a)</code>
+            <p class="m-b_1">Directly in Python:</p>
+            <code class="m-b_2">4 + 4</code>
+            <p class="m-b_1">Adding Integers and Floats:</p>
+            <code class="m-b_2">a = 4 + 4<br>
+                b = 4.5 + 4.56<br>
+                print(a + b)</code>
+        </section>
+
+        <hr>
+
+        <!-- Python Module Operator -->
+        <section id="python_module_operator" class="main-section">
+            <header>Python Module Operator</header>
+            <p class="m-b_2">Returns the remainder of the division of the left operand by the right operand.<br>
+                It is used to find the remainder of a division problem.</p>
+            <p class="m-b_2">The modulo operator is considered an arithmetic operation just like the operators
+                <b>+, &nbsp;-, &nbsp;/, &nbsp;*, &nbsp;**, &nbsp;//</b>.</p>
+            <p class="m-b_1">The basic syntax is:</p>
+            <code class="m-b_1">a % b</code>
+            <p class="m-b_2">In the example above, a is divided by b and the remainder is returned.</p>
+            <p class="m-b_1">Let's look at an example with numbers:</p>
+            <code class="m-b_1">7 % 2</code>
+            <p class="m-b_2">The result of the above example is one.<br>Two out of seven (Three times) and one left
+                over.</p>
+            <p class="m-b_1">The following diagram shows a visual representation of 7 / 2 and 7 % 2 (The "R" stands for
+                remainder):</p>
+            <code class="m-b_1">7 / 2 = 3 R 1 <br>
+                7 % 2 = 1</code>
+            <p class="m-b_2">The R is the remainder of the division of the problem.<br>
+                It is also the answer to 7 % 2.</p>
+            <p class="m-b_1">Here's another example:</p>
+            <code class="m-b_1">3 % 4</code>
+            <p class="m-b_2">This will result in three.<br>
+                The four does not fit in the three, so the original three is still left over.</p>
+            <p class="m-b_1">The following diagram shows what is happening:</p>
+            <code class="m-b_1">3 / 4 = 0 R 3<br>
+                3 % 4 = 3</code>
+            <p>The rest is three.</p><br>
+            <p class="text_center m-b_2"><b>Remember, the modulus operator returns the remainder after performing the
+                    division.</b></p>
+
+            <hr>
+
+            <header>Modulus operator usage example</header>
+            <p class="m-b_2 text_center">A common use of the modulus operator is to find even or odd numbers..</p>
+            <p class="m-b_1">The following code uses the modulus operator to print all odd numbers
+                between 0 and 10:</p>
+            <code class="m-b_2">for number in range(1, 10):<br>
+                if(numero % 2 != 0):<br>
+                print(number)<br><br>
+                Result: 1, 3, 5, 7, 9.</code>
+            <p class="m-y text_center">It is also used to find out if a number is divisible by another.</p>
+            <p class="m-b_1">For example:</p>
+            <code class="m-b_2">a = 50 % 5<br>
+                print(a)<br><br>
+                Result:
+                0.</code>
+            <p class="m-y text_center">Or also to know if a number is even or odd.</p>
+            <p class="m-b_1">For example pair:</p>
+            <code class="m-b_2">a = 23 % 1<br>
+                print(a)<br><br>
+                Result:
+                0.</code>
+            <p class="m-b_1">O odd:</p>
+            <code class="m-b_2">a = 23 % 2<br>
+                print(a)<br><br>
+                Result:
+                1.</code>
+            <p class="m-b_1">Remnants:</p>
+            <code class="m-b_2">a = 20 % 2<br>
+                print(a)<br><br>
+                Result:
+                0 (NO holdovers).</code>
+            <p class="m-y text_center">Python Exponent Operator</p>
+            <p class="m-b_1">For example 20 raised to the power of 2:</p>
+            <code class="m-b_2">a = 20 ** 2<br>
+                print(a)<br><br>
+                Result:
+                400.</code>
+            <p class="m-b_1">Other examples:</p>
+            <code class="m-b_2">a = 2 + 10 * 10 + 4<br>
+                print(a)<br><br>
+                Result:
+                106 (0 x 10 plus 4 plus 2).</code>
+            <p class="m-b_1">Or also:</p>
+            <code>a = (2 + 10) * (10 + 4)<br>
+                print(a)<br><br>
+                Result:
+                168 (12 x 14).</code>
+        </section>
+
+        <hr>
+
+        <!-- Variables -->
+        <section id="variables" class="main-section">
+            <header>Variables</header>
+            <p><span class="bold">*</span>&nbsp;We have just worked with numbers, but it is difficult to know what they
+                represent
+                these numbers if we do not assign them a Variable (Apply logic).</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;It would be good to give these data types a name to be
+                able to recognize them.</p>
+            <p class="m-b_1">For example:</p>
+            <code class="m-b_2">My_houses = 2</code>
+            <p class="m-y text_center">Variable naming rules</p>
+            <p><span class="bold">*</span>&nbsp;It is considered good practice to use lowercase names.</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;Avoid using words with special meanings such as
+                "list" o "str".</p>
+            <p class="m-y text_center">Python uses Dynamic monenclature</p>
+            <p><span class="bold">*</span>&nbsp;It means that we can re-assign variables to other data types.</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;This makes python quite flexible when assigning
+                variables.</p>
+            <p class="m-b_1">For example:</p>
+            <code class="m-b_2">My_houses = 2</code>
+            <p class="m-b_1">or what would be the same:</p>
+            <code class="m-b_1">My_houses = ["house1","house2"]</code>
+            <p>This is correct in Python!!</p>
+        </section>
+
+        <hr>
+
+        <!-- Dynamic Nomenclature -->
+        <section id="dynamic_nomenclature" class="main-section">
+            <header>Dynamic Nomenclature</header>
+            <p class="m-b_1"><b>Pros:</b></p>
+            <p><span class="bold">*</span>&nbsp;Easy to work.</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;Quick to develop.</p>
+            <p class="m-b_1"><b>Cons:</b></p>
+            <p><span class="bold">*</span>&nbsp;Results in unexpected data errors.</p>
+            <p><span class="bold">*</span>&nbsp;We must be careful with the function type().</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;Sometimes we must specify the type of Variable with which
+                we will work.</p>
+            <p class="m-b_1">For example, if we were working with a Video Game:</p>
+            <code class="m-b_2">life = 100<br>
+                damage = 25<br>
+                print(life - damage)<br><br>
+                Result:
+                75 -->> We have subtracted the damage (25) from the life (100).</code>
+            <p class="m-y text_center">Data:</p>
+            <p class="m-b_1">For example, if in Python we put:</p>
+            <code class="m-b_1">life = 100<br>
+                type(life)<br><br>
+                Result:
+                It will tell us that the type of life is an int (Integer class).</code>
+        </section>
+
+        <hr>
+
+        <!-- Strings -->
+        <section id="text_strings" class="main-section">
+            <header>Text Strings</header>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;Strings are sequences of characters and use single or
+                double quoted syntax.</p>
+            <p class="m-b_1">For example:</p>
+            <code class="m-b_2">'hello'<br>
+                "hello"<br>
+                Character: &nbsp;&nbsp;&nbsp;"Text string with many characters"<br>
+                Index: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+                &nbsp;&nbsp;&nbsp;2
+                &nbsp;&nbsp;&nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+                Index reverse: &nbsp;0 &nbsp;&nbsp; &nbsp;-4 &nbsp;&nbsp;-3 &nbsp;&nbsp;-2
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-1</code>
+            <p class="m-y text_center">Data:</p>
+            <p class="m-b_2 text_center">Both string and list indices in Python always start at 0 (Zero).</p>
+            <p class="m-b_2"><span class="bold">*</span>&nbsp;Because strings are ordered sequences,
+                means we can use Indexing and Slicing to grab sub-sections of a string.</p>
+            <ol type="a">
+                <li class="m-b_1"><span>[+]</span>&nbsp;Indexing notation: [], assigned after the string.</li>
+                <li class="m-b_1"><span>[+]</span>&nbsp;Indexed: Allows us to grab a single character from a string of
+                    text.</li>
+                <li class="m-b_1"><span>[+]</span>&nbsp;Slicing: Allows us to grab a sub-section of multiple characters
+                    (A slice of a chain).</li>
+                <li class="m-b_1"><span>[+]</span>&nbsp;Syntax: [start:stop:step] -> [0:4:2].</li>
+                <li class="m-b_1"><span>[+]</span>&nbsp;Start: It is a numerical index for the slice to start.</li>
+                <li class="m-b_1"><span>[+]</span>&nbsp;Stop: It is the number where we stop the Slice (End).</li>
+                <li class="m-b_2"><span>[+]</span>&nbsp;Step: It's the steps we take.</li>
+            </ol>
+            <p class="m-b_1">We print a Text String:</p>
+            <code class="m-b_2">print("hello world") -->> In one line.<br><br>
+                print("hello \nworld") -->> In two lines.</code>
+            <p class="m-b_1">We print the Length of a Text String:</p>
+            <code class="m-b_1">print(len("hello world"))<br><br>
+                Result:
+                10 -->> Spaces and special characters are also counted (Rare).</code>
+        </section>
+
+        <hr>
+
+        <!-- Índex and Slicing -->
+        <section id="index_and_slicing_of_a_string" class="main-section">
+            <header>Index and Slicing of a String</header>
+            <p class="m-b_1">Indexed:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[2])<br><br>
+                Result:
+                l.</code>
+            <p class="m-b_1">Indexed reverse:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[-1])<br><br>
+                Result:
+                o.</code>
+            <p class="m-b_1">Slicing&nbsp;#1:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[0:4])<br><br>
+                Result:
+                hello.</code>
+            <p class="m-b_1">Slicing&nbsp;#2:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[0:4:2])<br><br>
+                Result:
+                hl.</code>
+            <p class="m-b_1">Slicing&nbsp;#3:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[0:7:2])<br><br>
+                Result:
+                hl o.</code>
+            <p class="m-b_1">Slicing&nbsp;#4:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[3:8])<br><br>
+                Result:
+                o Wor.</code>
+            <p class="m-b_1">This:</p>
+            <code class="m-b_2">mystring = "Hello World"<br>
+                print(mystring[::])<br><br>
+                Result:
+                Hello World.</code>
+            <p class="m-b_1">Would be the same as this:</p>
+            <code class="m-b_1">mystring = "Hello World"<br>
+                print(mystring)<br><br>
+                Result:
+                Hello World.</code>
+
+        </section>
+
+        <hr>
+
+        <!-- String Properties and Methods -->
+        <section id="string_properties_and_methods" class="main-section">
+            <header>String Properties and Methods</header>
+            <p class="m-b_1">Text String Immutability:</p>
+            <code class="m-b_2">name = "Mich"<br>
+                name[0] = 'P'<br><br>
+                Result:
+                TypeError: 'str' object does not support item assignment.<br><br>Which means Strings are Immutable.<br>
+                They are mutated and can NOT be changed.</code>
+            <p class="m-b_1">To be able to edit a string we must concatenate it:</p>
+            <code class="m-b_2">name = "Mich"<br>
+                last_lyrics = name[1:]<br><br>
+                Result:
+                ich.</code>
+            <p class="m-b_1">We concatenate&nbsp;#1:</p>
+            <code class="m-b_2">name = "Mich"<br>
+                last_lyrics = name[1:]<br>
+                print('M' + last_lyrics)<br><br>
+                Result:
+                Mich.</code>
+            <p class="m-b_1">We concatenate&nbsp;#2:</p>
+            <code class="m-b_2">name = "Mich"<br>
+                last_lyrics = name[1:]<br>
+                print('P' + last_lyrics)<br><br>
+                Result:
+                Pich.</code>
+            <p class="m-b_1">Example&nbsp;#1:</p>
+            <code class="m-b_2">lyrics = 'z'<br>
+                lyrics = lyrics * 10<br>
+                print(lyrics)<br><br>
+                Result:
+                zzzzzzzzzz.</code>
+            <p class="m-b_1">Example&nbsp;#2:</p>
+            <code class="m-b_1">lyrics = '2' + '3'<br>
+                print(lyrics)<br><br>
+                Result:
+                23 -->> We have printed the concatenation of 2 plus 3.</code>
+        </section>
+
+        <hr>
+
+        <!-- Functions -->
+        <section id="functions" class="main-section">
+            <header>Functions</header>
+            <p class="m-b_1">Function upper():</p>
+            <code class="m-b_2">x = 'hello world'<br>
+                x = x.upper()<br>
+                print(x)<br><br>
+                Result:
+                HELLO WORLD.</code>
+            <p class="m-b_1">Function lower():</p>
+            <code class="m-b_2">x = 'hEllo wOrlD'<br>
+                x = x.lower()<br>
+                print(x)<br><br>
+                Result:
+                hello world.</code>
+            <p class="m-b_1">Function split()&nbsp;#1:</p>
+            <code class="m-b_2">x = 'hello world'<br>
+                x = x.split()<br>
+                print(x)<br><br>
+                Result:
+                ['hello', 'world'].</code>
+            <p class="m-b_1">Which is the same as this:</p>
+            <code class="m-b_2">x = 'hello | world'<br>
+                x = x.split('|')<br>
+                print(x)<br><br>
+                Result:
+                ['hello', 'world'].</code>
+            <p class="m-b_1">Function split()&nbsp;#2:</p>
+            <code class="m-b_1">x = 'hello world'<br>
+                x = x.split('o')<br>
+                print(x)<br><br>
+                Result:
+                ['h', 'lo worl', ''].</code>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
